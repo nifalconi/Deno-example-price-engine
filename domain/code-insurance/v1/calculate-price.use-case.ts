@@ -7,7 +7,7 @@ import {
 } from "./lib/price-calculators.ts";
 
 export const calculateInsurancePrice = (
-  companyDetails: CompanyDetails,
+  companyDetails: CompanyDetails
 ): number => {
   const prices = [
     calculateExternalApplicationPrice(companyDetails),
@@ -18,14 +18,3 @@ export const calculateInsurancePrice = (
 
   return prices.reduce((total, price) => total + price, 0);
 };
-
-const input = {
-  "externalApplications": 5,
-  "microservices": 10,
-  "Kloc": 110,
-  "developers": 5,
-};
-
-const testX = calculateInsurancePrice(input);
-
-console.log({testX})
