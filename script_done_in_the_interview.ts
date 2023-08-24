@@ -85,9 +85,9 @@ const input: PricingVariables = {
   "developers": 5,
 };
 
-const testX = calculateCodingPriceEngine(input);
-const testY = calculateCodingPriceEngineV2(input);
+const version1 = calculateCodingPriceEngine(input);
+const version2 = calculateCodingPriceEngineV2(input);
 
-console.log({testX})
-console.log({testY})
+console.log({version1})
+console.log({version2})
 
