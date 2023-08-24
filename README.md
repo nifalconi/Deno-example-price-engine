@@ -20,16 +20,22 @@ For other platforms or more installation options, please refer to the [official 
 
 Execute your Deno script with:
 
+For running the work done in the interview
 ```
 deno run ./script_done_in_the_interview.ts
 ```
+For running the continuation
 ```
 deno run ./domain/code-insurance/v2/calculate-price.use-case.ts
 deno run ./domain/code-insurance/v1/calculate-price.use-case.ts  
 ```
 
-### TODO
-There are no tests for now. 
+### Test
+
+```
+deno test 
+```
+
 
 ### Why deno and not node?
 
